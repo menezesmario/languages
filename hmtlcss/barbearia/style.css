@@ -1,5 +1,7 @@
 body {
   font-family: "roboto slab", serif;
+  color: lightgray;
+  line-height: normal;
 }
 
 header {
@@ -94,8 +96,6 @@ footer {
 }
 
 main {
-  width: 940px;
-  margin: 0 auto;
 }
 
 form {
@@ -163,8 +163,29 @@ th {
 .titulo-principal {
   text-align: center;
   font-size: 2em;
-  margin: 1em 0 1em;
+  margin: 0em 0 1em;
   clear: left;
+  text-shadow: 2px 2px 5px black;
+}
+
+.titulo-principal::before {
+  content: "} ";
+}
+.titulo-principal::after {
+  content: " {";
+}
+
+.principal {
+  width: 940px;
+  padding: 3em 0;
+  background: #424242;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.conteudo-principal {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .principal p {
@@ -179,8 +200,43 @@ th {
   font-style: italic;
 }
 
-.imagembeneficios {
-  width: 60%;
+.beneficios {
+  margin: 0 auto;
+  background: #363535;
+}
+
+.imagem-beneficios {
+  width: 50%;
+  margin-left: 5%;
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.imagem-beneficios:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.conteudo-beneficios {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  float: left;
+}
+
+.itens {
+  line-height: 2;
+}
+
+.itens::before {
+  content: "★";
+}
+
+.itens:first-child {
+  font-weight: bold;
 }
 
 .utensilios {
@@ -191,14 +247,48 @@ th {
 
 .mapa {
   padding: 3em 0;
+  background: linear-gradient(#424242, #363535);
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .mapa p {
   margin: 0 0 2em;
+  text-align: center;
 }
 
 .video {
   width: 100%;
   height: auto;
   margin: 1em auto;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 480px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video,
+  .conteudo-principal {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+    align-items: center;
+  }
 }
