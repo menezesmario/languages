@@ -2,6 +2,7 @@ body {
   font-family: "roboto slab", serif;
   color: lightgray;
   line-height: normal;
+  background-color: #424242;
 }
 
 header {
@@ -158,6 +159,7 @@ th {
 /* css da página inicial */
 .banner {
   width: 100%;
+  margin: 0;
 }
 
 .titulo-principal {
@@ -287,8 +289,40 @@ th {
   }
 
   .lista-beneficios,
-  .imagem-beneficios {
+  .imagem-beneficios,
+  img.utensilios {
     width: 100%;
     align-items: center;
+  }
+
+  .titulo-principal {
+    font-size: 1.5em;
+    padding: 20px;
+  }
+
+  p {
+    padding: 20px;
+    text-align: center;
+  }
+
+  li.itens {
+    margin: 0 30px 30px 30px;
+  }
+
+  header {
+    font-size: 1em;
+  }
+
+  .imagem-beneficios {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mapa-conteudo {
+    padding: 0;
+  }
+
+  .principal {
+    padding: 0;
   }
 }
