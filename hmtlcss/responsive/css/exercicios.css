@@ -1,6 +1,6 @@
 .secao {
   float: left;
-  width: 33.333%;
+  width: 100%;
 }
 
 .mini {
@@ -13,8 +13,7 @@
   max-width: 1200px;
 }
 
-.logo,
-.secao {
+.logo {
   padding: 0 1%;
 }
 
@@ -32,4 +31,40 @@ img {
 
 .menu-principal li {
   float: left;
+}
+
+header {
+  padding: 1em 1em;
+}
+
+.destaques {
+  margin-top: 2em;
+}
+
+.barra-nav {
+  margin: 2em 1em;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.125em;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 1.25;
+  }
+}
+
+@media (min-width: 600px) {
+  .secao {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .secao {
+    width: 33.333%;
+  }
 }
