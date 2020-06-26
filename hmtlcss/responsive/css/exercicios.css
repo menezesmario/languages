@@ -1,43 +1,43 @@
-.menu-abrir, .menu-fechar {
-        background: none;
-        border: 0;
-        outline: 0;
-        -webkit-appearance: none;
-        font-size: 1.6em;
-        text-indent: -999em;
+.menu-abrir,
+.menu-fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em;
 }
 
 .menu-abrir {
-        height: 0;
-        width: .75em;
-        padding-top: .125em;
-        border-top: .375em double #000;
-        border-bottom: .125 solid #000;
+  height: 0;
+  width: 0.75em;
+  padding-top: 0.125em;
+  border-top: 0.375em double #000;
+  border-bottom: 0.125 solid #000;
 
-        vertical-align: middle;
-        margin: 0.5em;
+  vertical-align: middle;
+  margin: 0.5em;
 }
 
 .menu-fechar {
-        position: relative;
-        height: 1em;
-        width: 1em;
+  width: 20px;
+  margin-left: 0.5em;
+  position: relative;
+  height: 1em;
+  width: 1em;
 }
 
-.menu-fechar::before{
-        content: '\00D7'; /* X */
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-indent: 0;
+.menu-fechar::before {
+  content: "\00D7"; /* X */
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: 0;
 }
 
 .logo img {
-        width: 200px;
+  width: 200px;
 }
-
-
-
 
 .secao {
   float: left;
@@ -119,6 +119,7 @@ header {
     height: 100%;
     width: 90%;
     max-width: 320px;
+
     position: fixed;
     z-index: 1;
     top: 0;
@@ -132,38 +133,29 @@ header {
   }
 
   .menu-principal li {
-          padding: 1em;
-          width: 100%;
+    padding: 1em;
+    width: 100%;
   }
-
 }
 
-  @media not all and (max-width: 600px) {
+@media not all and (max-width: 600px) {
   .menu-abrir,
   .menu-fechar {
     display: none;
   }
 }
 
-
-
-
 @media (max-width: 600px) {
+  .menu-ativo:after {
+    content: "";
+    display: block;
 
-.menu-ativo:after{
-        content "";
-        display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-
-        backgroud: rgba(0, 0, 0, 0.4);
-
+    background: rgba(0, 0, 0, 0.4);
+  }
 }
-}
-
-
-
