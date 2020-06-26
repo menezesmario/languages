@@ -72,7 +72,7 @@ $authorName = getAuthor();
 
 booksByAuthorYear($authorName, $year);
 */
-
+/*
 function getAuthor(){
         echo "Charles Dickens";
 }
@@ -81,3 +81,6 @@ $variableFunctionName = "getAuthor";
 
 $variableFunctionName();
 ?>
+
+*/
+
