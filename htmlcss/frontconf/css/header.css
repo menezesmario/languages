@@ -1,7 +1,7 @@
 .header {
   background: url("/img/destaque.jpeg") no-repeat;
   background-size: cover;
-  padding: 2em;
+  padding: 1em;
 }
 
 .header .main-menu {
@@ -31,7 +31,7 @@
 .header .jumbotron {
   margin: 3em;
   text-align: center;
-  padding: 0 0 44px 0;
+  padding: 0 0 auto 0;
   text-transform: uppercase;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .header .jumbotron .title {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 
 .header .jumbotron .subtitle {
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-align: center;
   margin-top: 1em;
   color: #64ff64;
