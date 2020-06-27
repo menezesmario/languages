@@ -34,7 +34,7 @@
   height: 300px;
 }
 
-.foto-palestrante img {
+.foto-palestrante .speaker-image {
   border-radius: 50%;
   display: block;
   width: 210px;
