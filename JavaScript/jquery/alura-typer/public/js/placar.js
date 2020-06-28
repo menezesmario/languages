@@ -1,7 +1,9 @@
+$("#botao-sync").click(sincronizaPlacar);
+
 $("#botao-placar").click(mostraPlacar);
 
 function mostraPlacar() {
-  $(".placar").fadeToggle(500);
+  $(".placar").stop().fadeToggle(500);
 }
 
 function inserePlacar() {
@@ -13,6 +15,19 @@ function inserePlacar() {
   linha.find(".botao-remover").click(removeLinha);
 
   corpoTabela.append(linha);
+
+  $(".placar").slideDown(500);
+  scrollPlacar();
+}
+
+function scrollPlacar() {
+  let posicaoPlacar = $(".placar").offset().top;
+  $("body").animate(
+    {
+      scrollTop: posicaoPlacar + "px",
+    },
+    1000
+  );
 }
 
 function novaLinha(usuario, palavras) {

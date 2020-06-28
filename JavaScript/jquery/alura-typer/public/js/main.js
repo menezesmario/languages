@@ -31,8 +31,8 @@ function inicializaContadores() {
 }
 
 function inicializaCronometro() {
-  let tempoRestante = $("#tempo-digitacao").text();
   campo.one("focus", function () {
+    let tempoRestante = $("#tempo-digitacao").text();
     $("#botao-reiniciar").attr("disable", true);
     let cronometroID = setInterval(function () {
       tempoRestante--;
@@ -54,8 +54,9 @@ function finalizaJogo() {
 }
 
 function inicializaMarcadores() {
-  let frase = $(".frase").text();
   campo.on("input", function () {
+    let frase = $(".frase").text();
+
     let digitado = campo.val();
     let comparavel = frase.substr(0, digitado.length);
 
@@ -82,4 +83,10 @@ function reiniciaJogo() {
   campo.toggleClass("campo-desativado");
   campo.removeClass("borda-vermelha");
   campo.removeClass("borda-verde");
+}
+
+function atualizaTempoInicial(tempo) {
+  tempoInicial = tempo;
+
+  $("#tempo-digitacao").text(tempo);
 }
